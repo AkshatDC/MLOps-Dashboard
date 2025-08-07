@@ -141,7 +141,7 @@ function ModelMetricsDashboard() {
           scales: {
             y: {
               beginAtZero: true,
-              ticks: { color: '#e0e0e0' },
+              ticks: { color: '#0c0404ff' },
               grid: { color: '#333' }
             },
             x: {
