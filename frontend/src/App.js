@@ -1,6 +1,7 @@
 import React from 'react';
 import { CssBaseline, Container, Typography, Box, Paper } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import DashboardHeader from './components/DashboardHeader';  // import the new header component
 
 // Custom dark theme with luxurious, intellectual vibe
 const darkTheme = createTheme({
@@ -38,8 +39,12 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Box sx={{ minHeight: '100vh', paddingTop: 4, backgroundColor: darkTheme.palette.background.default }}>
-        <Container maxWidth="md">
+      <Box sx={{ minHeight: '100vh', backgroundColor: darkTheme.palette.background.default }}>
+        {/* Header */}
+        <DashboardHeader />
+
+        {/* Main content */}
+        <Container maxWidth="md" sx={{ paddingTop: 4 }}>
           <Paper elevation={10} sx={{ padding: 4, borderRadius: 3 }}>
             <Typography variant="h4" color="primary" align="center">
               MLOps Dashboard
