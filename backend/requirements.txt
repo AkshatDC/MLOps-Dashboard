@@ -2,6 +2,6 @@ fastapi
 uvicorn[standard]
 pydantic
 numpy
-scikit-learn
+scikit-lea
 shap
 lime
