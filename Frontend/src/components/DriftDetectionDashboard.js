@@ -8,7 +8,7 @@ import {
   PointElement,
   LineElement,
   Title,
-  Tooltip
+  Tooltip,
   Legend,
 } from 'chart.js';
 
