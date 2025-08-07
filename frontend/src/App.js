@@ -1,7 +1,9 @@
 import React from 'react';
 import { CssBaseline, Container, Typography, Box, Paper } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import DashboardHeader from './components/DashboardHeader';  // import the new header component
+import DashboardHeader from './components/DashboardHeader';
+import ModelMetricsDashboard from './components/ModelMetricsDashboard';
+import ExplainabilityDashboard from './components/ExplainabilityDashboard';
 
 // Custom dark theme with luxurious, intellectual vibe
 const darkTheme = createTheme({
@@ -44,8 +46,8 @@ function App() {
         <DashboardHeader />
 
         {/* Main content */}
-        <Container maxWidth="md" sx={{ paddingTop: 4 }}>
-          <Paper elevation={10} sx={{ padding: 4, borderRadius: 3 }}>
+        <Container maxWidth="md" sx={{ paddingTop: 4, paddingBottom: 4 }}>
+          <Paper elevation={10} sx={{ padding: 4, borderRadius: 3, marginBottom: 4 }}>
             <Typography variant="h4" color="primary" align="center">
               MLOps Dashboard
             </Typography>
@@ -56,6 +58,12 @@ function App() {
               Welcome to the MLOps Dashboard prototype. This platform will offer insights into deployed machine learning models, providing metrics, explanations, and alerts to maintain reliability and trust in AI systems.
             </Typography>
           </Paper>
+
+          {/* Model Performance Metrics */}
+          <ModelMetricsDashboard />
+
+          {/* Explainability Insights */}
+          <ExplainabilityDashboard />
         </Container>
       </Box>
     </ThemeProvider>
