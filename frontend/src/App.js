@@ -1,9 +1,11 @@
 import React from 'react';
 import { CssBaseline, Container, Typography, Box, Paper } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 import DashboardHeader from './components/DashboardHeader';
 import ModelMetricsDashboard from './components/ModelMetricsDashboard';
 import ExplainabilityDashboard from './components/ExplainabilityDashboard';
+import DriftDetectionDashboard from './components/DriftDetectionDashboard';
 
 // Custom dark theme with luxurious, intellectual vibe
 const darkTheme = createTheme({
@@ -11,7 +13,7 @@ const darkTheme = createTheme({
     mode: 'dark',
     background: {
       default: '#121212',
-      paper: '#1e1e1e'
+      paper: '#1e1e1e',
     },
     primary: {
       main: '#bb86fc',
@@ -64,6 +66,9 @@ function App() {
 
           {/* Explainability Insights */}
           <ExplainabilityDashboard />
+
+          {/* Drift Detection & Monitoring */}
+          <DriftDetectionDashboard />
         </Container>
       </Box>
     </ThemeProvider>
