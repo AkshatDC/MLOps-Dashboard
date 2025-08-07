@@ -56,6 +56,3 @@ Follow these steps to set up and run the project locally.
 - Node.js 16+
 - Docker (optional for containerized deployment)
 - Git
-
-### Clone the repository
-
