@@ -40,7 +40,7 @@ The project showcases best practices in AI lifecycle management, interpretabilit
 | Explainability     | SHAP, LIME            |
 | Drift Detection    | Scikit-multiflow, custom stats |
 | Frontend UI        | React.js, Chart.js/Plotly |
-| Database           | PostgreSQL (optional for metrics storage) |
+| Database           | PostgreSQL |
 | Deployment         | Docker, AWS/Azure/GCP |
 | Testing            | Pytest (backend), Jest (frontend) |
 
